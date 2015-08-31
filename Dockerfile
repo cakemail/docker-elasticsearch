@@ -1,8 +1,8 @@
-# Elasticsearch 1.6.0
+# Elasticsearch 1.7.1
 FROM java:openjdk-7-jre
 MAINTAINER tobilg <fb.tools.github@gmail.com>
 
-ENV ES_VERSION 1.6.0
+ENV ES_VERSION 1.7.1
 
 # download and unpack elasticsearch
 RUN wget -q https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-$ES_VERSION.tar.gz -O - | tar zxvf - && \
