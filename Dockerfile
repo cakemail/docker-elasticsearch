@@ -2,6 +2,8 @@
 FROM java:openjdk-7-jre
 MAINTAINER tobilg <fb.tools.github@gmail.com>
 
+ONBUILD apt-get -yqq update && apt-get upgrade -yqq
+
 ENV ES_VERSION 1.7.5
 
 # download and unpack elasticsearch
