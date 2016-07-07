@@ -1,8 +1,8 @@
-# Elasticsearch 1.7.1
 FROM java:openjdk-7-jre
-MAINTAINER tobilg <fb.tools.github@gmail.com>
+MAINTAINER sebastien <sebastien@cakemail.com>
 
 ONBUILD apt-get -yqq update && apt-get upgrade -yqq
+RUN apt-get -yqq update && apt-get upgrade -yqq
 
 ENV ES_VERSION 2.3.2
 
